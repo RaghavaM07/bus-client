@@ -1,0 +1,136 @@
+body {
+	background-color: rgb(206, 255, 255);
+	margin: 5vh 5vw;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+label {
+	display: inline-block;
+	font-size: large;
+	font-weight: bold;
+}
+
+.homeInputs > label {
+	width: 75px;
+}
+
+.homeInputs > input {
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.seatNoInput > label {
+	width: 275px;
+}
+
+.homeInputs,
+.GoButton {
+	margin: 2vh 1vw;
+	font-size: large;
+}
+
+.seatNoInput {
+	margin: 1vh 1vw;
+}
+
+.schedTable {
+	display: grid;
+	grid-template-columns: repeat(5, 200px);
+	width: fit-content;
+	background-color: antiquewhite;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
+.schedbox,
+.busnocol,
+.schedidcol,
+.depttimecol,
+.selectcol,
+.pricecol {
+	padding: 1.5vh 0;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.logoutbutton {
+	float: right;
+}
+
+/* login page css */
+
+.login {
+	margin: auto;
+	width: 400px;
+	background: #fff;
+	border: 1px solid #dddfe2;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	border-radius: 8px;
+	padding: 1rem;
+	align-items: center;
+	text-align: center;
+}
+
+.login > input {
+	border-radius: 8px;
+	border: 2px solid #dddfe2;
+	outline: none;
+	color: #1d2129;
+	margin: 0.5rem 0;
+	padding: 0.5rem 0.75rem;
+	width: 92%;
+	font-size: 1rem;
+}
+
+.login > .button {
+	background: #1877f2;
+	border: 1px solid #1877f2;
+	color: #fff;
+	font-size: 1.25rem;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border-radius: 8px;
+	outline: none;
+	cursor: pointer;
+}
+
+/* signup page css */
+
+.signup {
+	margin: auto;
+	width: 400px;
+	background: #fff;
+	border: 1px solid #dddfe2;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	border-radius: 8px;
+	padding: 1rem;
+	align-items: center;
+	text-align: center;
+}
+
+.signup > input {
+	border-radius: 8px;
+	border: 2px solid #dddfe2;
+	outline: none;
+	color: #1d2129;
+	margin: 0.5rem 0;
+	padding: 0.5rem 0.75rem;
+	width: 92%;
+	font-size: 1rem;
+}
+
+.signup > .button {
+	background: #1877f2;
+	border: 1px solid #1877f2;
+	color: #fff;
+	font-size: 1.25rem;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border-radius: 8px;
+	outline: none;
+	cursor: pointer;
+}
