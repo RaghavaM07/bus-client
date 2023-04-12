@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 const API_BASE = "http://localhost:3500";
 
 function Home() {
-
+    const [flag, setFlag] = useState(true);
     function LogoutUser() {
         window.localStorage.setItem("user", '{}');
         axios.post(API_BASE + '/auth/logout').then(res => alert(res.data.message));
@@ -44,6 +44,7 @@ function Home() {
     };
 
     function callBackendForSched() {
+        setFlag(true);
         axios.put(API_BASE + "/sched/getBuses", { from, to, date })
             .then(async response => {
                 const { data } = response;
@@ -115,7 +116,7 @@ function Home() {
     }
 
     function getBookings() {
-        
+        setFlag(false);
         axios.put(API_BASE + "/booking/getMyBookings", JSON.parse(window.localStorage.getItem('user')))
             .then(async response => {
                 const { data } = response;
@@ -174,8 +175,8 @@ function Home() {
 
             <Button className='GoButton' onClick={callBackendForSched}>Go</Button>
 
-            {busSchedule}
-            {myBookings}
+            {flag && busSchedule}
+            {!flag && myBookings}
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton></Modal.Header>
