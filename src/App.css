@@ -57,8 +57,33 @@ label {
 	text-align: center;
 }
 
-.logoutbutton {
+.bookingsTable {
+	display: grid;
+	grid-template-columns: repeat(7, 200px);
+	width: fit-content;
+	background-color: antiquewhite;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
+.bdate,
+.bbusnum,
+.bfrom,
+.bto,
+.btime,
+.bnoofseats,
+.bprice {
+	padding: 1.5vh 0;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.navbtns {
 	float: right;
+}
+
+.logoutbutton, .bookingsbutton {
+    margin: 10px;
 }
 
 /* login page css */
